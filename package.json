@@ -1,0 +1,24 @@
+{
+  "name": "cammy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "app": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tree": "tree -a -I '.git|node_modules'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blp1526/cammy.git"
+  },
+  "author": "Shingo Kawamura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blp1526/cammy/issues"
+  },
+  "homepage": "https://github.com/blp1526/cammy#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^0.36.7"
+  }
+}
