@@ -5,7 +5,9 @@ const Tray = electron.Tray;
 const spawn = require('child_process').spawn;
 
 const capture = function() {
-  spawn('screencapture', ['-i', 'screencapture.png'])
+  const unixtimestamp = parseInt((new Date) / 1000);
+  const filePath = `${unixtimestamp}.png`;
+  spawn('screencapture', ['-i', filePath]);
 };
 
 var appIcon = null;
