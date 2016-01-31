@@ -6,7 +6,8 @@ const spawn = require('child_process').spawn;
 
 const capture = function() {
   const unixtimestamp = parseInt((new Date) / 1000);
-  const filePath = `${unixtimestamp}.png`;
+  const dir = `${process.env["HOME"]}/Desktop/`;
+  const filePath = `${dir}${unixtimestamp}.png`;
   spawn('screencapture', ['-i', filePath]);
 };
 
