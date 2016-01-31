@@ -5,7 +5,7 @@ const Tray = electron.Tray;
 const spawn = require('child_process').spawn;
 
 const capture = function() {
-  spawn('say', ['foo'])
+  spawn('screencapture', ['-i', 'screencapture.png'])
 };
 
 var appIcon = null;
