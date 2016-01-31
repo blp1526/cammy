@@ -1,11 +1,10 @@
 {
   "name": "cammy",
   "version": "1.0.0",
-  "description": "",
+  "description": "A screen capture application for OSX",
   "main": "main.js",
   "scripts": {
     "app": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "tree": "tree -a -I '.git|node_modules'"
   },
   "repository": {
@@ -20,5 +19,10 @@
   "homepage": "https://github.com/blp1526/cammy#readme",
   "devDependencies": {
     "electron-prebuilt": "^0.36.7"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true
+    }
   }
 }
